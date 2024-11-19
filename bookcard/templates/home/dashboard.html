@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eflyer - Shopping Made Easy</title>
+    <link href="/static/css/home-page.css" rel="stylesheet">
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container">
+        <nav class="top-nav">
+          <a href="#">Best Sellers</a>
+          <a href="#">Gift Ideas</a>
+          <a href="#">New Releases</a>
+          <a href="#">Today's Deals</a>
+          <a href="#">Customer Service</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+      <div class="container">
+        <div class="nav-content">
+          <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+            <span class="hamburger"></span>
+          </button>
+          
+          <a href="/" class="logo">Eflyer</a>
+          
+          <div class="search-cart">
+            <div class="search-box">
+              <select class="category-select">
+                <option>All Category</option>
+              </select>
+              <input type="text" placeholder="Search this blog" class="search-input">
+              <button class="search-button">
+                <svg width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </button>
+            </div>
+            
+            <div class="user-actions">
+              <div class="language">
+                <span>🌐</span>
+                <span>English</span>
+              </div>
+              <div class="cart">
+                <span>🛒</span>
+                <span>CART</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+          <div class="mobile-search">
+            <input type="text" placeholder="Search..." class="mobile-search-input">
+            <button class="mobile-search-button">Search</button>
+          </div>
+          <nav class="mobile-nav">
+            <a href="#">Best Sellers</a>
+            <a href="#">Gift Ideas</a>
+            <a href="#">New Releases</a>
+            <a href="#">Today's Deals</a>
+            <a href="#">Customer Service</a>
+          </nav>
+          <div class="mobile-actions">
+            <button class="mobile-action-btn">
+              <span>🌐</span>
+              English
+            </button>
+            <button class="mobile-action-btn">
+              <span>🛒</span>
+              Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="hero-gradient"></div>
+      <div class="container">
+        <button class="nav-arrow nav-prev">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+        
+        <div class="hero-content">
+          <h1>GET START</h1>
+          <h2>YOUR FAVORITE SHOPPING</h2>
+          <button class="cta-button">BUY NOW</button>
+        </div>
+        
+        <button class="nav-arrow nav-next">
+          <svg width="24" height="24" viewBox="0 0 24 24">
+            <path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- product card -->
+
+    <div class="container">
+        <div class="carousel-wrapper">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://m.media-amazon.com/images/G/31/selldot/Images/WebpImages/Books.webp" alt="Stylish Headphones">
+                        </div>
+                        <div class="card-content">
+                            <h2 class="card-title">Stylish Headphones 1</h2>
+                            <div class="card-price">
+                                <span class="original-price">$129.99</span>
+                                <span class="offer-price">$99.99</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://m.media-amazon.com/images/G/31/selldot/Images/WebpImages/Furnitures.webp" alt="Smart Watch">
+                        </div>
+                        <div class="card-content">
+                            <h2 class="card-title">Smart Watch 2</h2>
+                            <div class="card-price">
+                                <span class="original-price">$199.99</span>
+                                <span class="offer-price">$179.99</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTZZb9sOiXzv3fklwWjS8QQgFhIaZNNp_Lt6QK5M0i-Ws_SFDBQcSrWE49yzywVPxfGrteecsni7_ZL7VyHtMMv--dfBp4SUTp6IcU7DmCPBnY-J3WprkqOjLB5UtVIOWA2jC9pQ2s&usqp=CAc" alt="Wireless Earbuds">
+                        </div>
+                        <div class="card-content">
+                            <h2 class="card-title">Wireless Earbuds 3</h2>
+                            <div class="card-price">
+                                <span class="offer-price">$89.99</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=400" alt="Portable Speaker">
+                        </div>
+                        <div class="card-content">
+                            <h2 class="card-title">Portable Speaker 4</h2>
+                            <div class="card-price">
+                                <span class="original-price">$79.99</span>
+                                <span class="offer-price">$69.99</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTZZb9sOiXzv3fklwWjS8QQgFhIaZNNp_Lt6QK5M0i-Ws_SFDBQcSrWE49yzywVPxfGrteecsni7_ZL7VyHtMMv--dfBp4SUTp6IcU7DmCPBnY-J3WprkqOjLB5UtVIOWA2jC9pQ2s&usqp=CAc" alt="Wireless Earbuds">
+                        </div>
+                        <div class="card-content">
+                            <h2 class="card-title">Wireless Earbuds 5</h2>
+                            <div class="card-price">
+                                <span class="offer-price">$89.99</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTZZb9sOiXzv3fklwWjS8QQgFhIaZNNp_Lt6QK5M0i-Ws_SFDBQcSrWE49yzywVPxfGrteecsni7_ZL7VyHtMMv--dfBp4SUTp6IcU7DmCPBnY-J3WprkqOjLB5UtVIOWA2jC9pQ2s&usqp=CAc" alt="Wireless Earbuds">
+                        </div>
+                        <div class="card-content">
+                            <h2 class="card-title">Wireless Earbuds 6</h2>
+                            <div class="card-price">
+                                <span class="offer-price">$89.99</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="custom-prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+            <button class="custom-next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+        </div>
+    </div>
+
+
+
+    <!-- end card -->
+
+    <script>
+      const menuToggle = document.getElementById('menuToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const body = document.body;
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+        body.classList.toggle('menu-open');
+      });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="/static/js/home.js"></script>
+  </body>
+</html>

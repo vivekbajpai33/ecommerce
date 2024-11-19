@@ -1,0 +1,120 @@
+<style>
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    margin: 10px 15px;
+    color: #333;
+}
+
+.card-price {
+    margin: 0 15px 15px;
+    font-size: 1.1rem;
+}
+
+.original-price {
+    color: #888;
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+.offer-price {
+    color: #e44d26;
+    font-weight: bold;
+}
+
+.add-to-cart {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: bottom 0.3s ease;
+}
+
+.card:hover .add-to-cart {
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
+</style>
+
+<!-- product card -->
+<div class="card-container">
+    <div class="card">
+        <img src="https://m.media-amazon.com/images/G/31/selldot/Images/WebpImages/Books.webp" alt="Product 1" class="card-image">
+        <h2 class="card-title">Stylish Headphones</h2>
+        <div class="card-price">
+            <span class="original-price">$129.99</span>
+            <span class="offer-price">$99.99</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="card">
+        <img src="https://m.media-amazon.com/images/G/31/selldot/Images/WebpImages/Furnitures.webp" alt="Product 2" class="card-image">
+        <h2 class="card-title">Smart Watch</h2>
+        <div class="card-price">
+            <span class="original-price">$199.99</span>
+            <span class="offer-price">$179.99</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="card">
+        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTZZb9sOiXzv3fklwWjS8QQgFhIaZNNp_Lt6QK5M0i-Ws_SFDBQcSrWE49yzywVPxfGrteecsni7_ZL7VyHtMMv--dfBp4SUTp6IcU7DmCPBnY-J3WprkqOjLB5UtVIOWA2jC9pQ2s&usqp=CAc" alt="Product 3" class="card-image">
+        <h2 class="card-title">Wireless Earbuds</h2>
+        <div class="card-price">
+            <span class="offer-price">$89.99</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="card">
+        <img src="/placeholder.svg?height=300&width=300" alt="Product 4" class="card-image">
+        <h2 class="card-title">Portable Speaker</h2>
+        <div class="card-price">
+            <span class="original-price">$79.99</span>
+            <span class="offer-price">$69.99</span>
+        </div>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</div>
